@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PricingEngineTest {
 
     @Test
-    void testBasicCalculation() {
+    void testDiscountApplied() {
         PricingEngine engine = new PricingEngine();
 
         double result = engine.calculate(
@@ -20,6 +20,6 @@ class PricingEngineTest {
                 "SAVE10"
         );
 
-        assertTrue(result > 0);
+        assertEquals(107.1, result, 0.01);
     }
 }
