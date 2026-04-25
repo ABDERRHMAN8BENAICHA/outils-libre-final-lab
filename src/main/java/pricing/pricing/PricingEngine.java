@@ -1,4 +1,4 @@
-package com.pricing;
+package pricing.pricing;
 
 import java.util.List;
 
